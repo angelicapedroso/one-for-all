@@ -10,4 +10,4 @@ WHERE
 GROUP BY
   nome
 ORDER BY
-  nome
+  nome;
