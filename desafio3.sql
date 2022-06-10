@@ -4,8 +4,8 @@ SELECT
   ROUND(SUM(s.duration) / 60, 2) AS total_minutos
 FROM
   SpotifyClone.user AS u
-  JOIN history AS h ON u.id = h.user_id
-  JOIN song AS s ON s.id = h.song_id
+  JOIN SpotifyClone.history AS h ON u.id = h.user_id
+  JOIN SpotifyClone.song AS s ON s.id = h.song_id
 GROUP BY
   u.name
 ORDER BY
